@@ -1,0 +1,1635 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #232536;
+  background-color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  width: 100%;
+  min-height: 54px;
+  background-color: #232536;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-container {
+  width: calc(100% - 48px);
+  max-width: 1340px;
+  min-height: 54px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-logo img {
+  display: block;
+  width: 88px;
+  height: auto;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-nav a {
+  color: #b9bac4;
+  font-size: 11px;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+  color: #ffffff;
+}
+
+.header-nav .clone-link {
+  color: #ffd3b6;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.clone-link span {
+  font-size: 17px;
+}
+
+.page-content {
+  min-height: 330px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.footer-container {
+  width: calc(100% - 48px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 65px 0 48px;
+}
+
+.newsletter {
+  width: 100%;
+  min-height: 261px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #6268f7;
+  border: 2px solid #009dff;
+}
+
+.newsletter-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 40px 73px;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-text {
+  color: #ffffff;
+}
+
+.newsletter-label {
+  margin-bottom: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.newsletter-text h2 {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.newsletter-form {
+  width: 40%;
+  max-width: 350px;
+  flex-shrink: 0;
+}
+
+.newsletter-form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 23px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  color: #232536;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.newsletter-form input::placeholder {
+  color: #9c9ca8;
+}
+
+.newsletter-shape-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 67px;
+  height: 64px;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.newsletter-shape-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  object-fit: fill;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  column-gap: 70px;
+  position: relative;
+  padding: 71px 4px 0;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  display: block;
+  width: 29px;
+  height: 27px;
+  object-fit: contain;
+  object-position: left top;
+  margin-bottom: 26px;
+}
+
+.footer-contact h2 {
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.footer-contact h3 {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-contact h3 span {
+  font-size: 20px;
+}
+
+.footer-contact > a {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-address {
+  width: 206px;
+  margin-top: 9px;
+  padding-top: 13px;
+  border-top: 1px solid #eeeeee;
+}
+
+.footer-address p {
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 0.8fr 1.3fr 1fr;
+  gap: 27px;
+  padding-top: 64px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.footer-column h3 {
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer-column a {
+  font-size: 11px;
+  line-height: 1.5;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #6268f7;
+}
+
+.footer-contact-link {
+  position: absolute;
+  right: 4px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer-contact-link img {
+  display: block;
+  width: 39px;
+  height: 11px;
+  object-fit: fill;
+}
+
+.footer-contact-link b {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.footer-bottom {
+  width: 100%;
+  min-height: 62px;
+  background-color: #ffe5d1;
+}
+
+.footer-bottom-container {
+  width: calc(100% - 48px);
+  max-width: 1200px;
+  min-height: 62px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-bottom-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.footer-bottom-logo img {
+  display: block;
+  width: 93px;
+  height: auto;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #111111;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-left: auto;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 18px;
+}
+
+.footer-socials img {
+  display: block;
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
+.services-section {
+  background: #ffe6d2;
+  padding: 80px 40px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.services-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Chap tomon */
+.services-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.services-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.services-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+/* Tugma */
+.services-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #3b30ff;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 10px 20px rgba(59, 48, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.services-btn:hover {
+  background-color: #2a1fe6;
+}
+
+/* O'ng tomon ro'yxat */
+.services-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-item {
+  font-size: 20px;
+  font-weight: 600;
+  color: #666;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.services-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.services-item.active,
+.services-item:hover {
+  color: #1a1a2e;
+}
+.process-section {
+  background-color: #fbf8f5; /* Rasmdagi och oqish fon rangi */
+  padding: 80px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Sarlavha qismi */
+.process-header {
+  margin-bottom: 60px;
+  max-width: 600px;
+}
+
+.process-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.process-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.process-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Grid qismi (3 ustunli) */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Kartochka dizayni */
+.process-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 35px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.process-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Rasm/Icon konteyneri */
+.process-icon-box {
+  width: 47px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-icon {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Raqamlar (01, 02...) */
+.process-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ccc;
+}
+
+.process-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.process-card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Pastki rangli chiziqcha (rasmdagidek) */
+.process-line-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+
+/* Faol kartochka tagidagi rangli chiziq (masalan 1-chi va oxirgisida) */
+.process-card.active .process-line-indicator,
+.process-card:hover .process-line-indicator {
+  background: linear-gradient(to right, #ff9f43 50%, #3b30ff 50%);
+}
+/* Asosiy section */
+.tech-support-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-support-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Chap tomon matn bloki */
+.tech-support-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.tech-support-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.tech-support-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.tech-support-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* O'ng tomon rasm bloki */
+.tech-support-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tech-support-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+/* Asosiy section */
+.development-section {
+  background-color: #ecf8f9; /* Rasmdagi och havo rang / mo'k fon */
+  padding: 80px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.development-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Chap tomon rasm bloki */
+.development-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.development-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* O'ng tomon matn bloki */
+.development-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.development-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.development-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.development-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+/* Asosiy section */
+.aws-azure-section {
+  background-color: #ffffff; /* Sof oq fon rangi */
+  padding: 80px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aws-azure-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Chap tomon matn bloki */
+.aws-azure-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.aws-azure-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.aws-azure-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.aws-azure-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* O'ng tomon rasm bloki */
+.aws-azure-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.aws-azure-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+/* Asosiy section */
+.consulting-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consulting-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Chap tomon rasm bloki */
+.consulting-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.consulting-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* O'ng tomon matn bloki */
+.consulting-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.consulting-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.consulting-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.consulting-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+/* Asosiy section */
+.it-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.it-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Chap tomon matn bloki */
+.it-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.it-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.it-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.it-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* O'ng tomon rasm bloki */
+.it-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.it-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+/* Asosiy section */
+.careers-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.careers-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sarlavha qismi */
+.careers-header {
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+.careers-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.careers-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.careers-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Careers katta yozuvi (Rasmdagi effekt uchun tayanch) */
+.careers-banner {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.careers-word {
+  font-size: 180px;
+  font-weight: 900;
+  letter-spacing: -5px;
+  margin: 0;
+  line-height: 1;
+  color: #1a1a2e; /* Agar harf ichiga rasm qo'ysangiz, background-clip ishlatishingiz mumkin */
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Har bir harfni alohida boshqarish uchun */
+.careers-word .letter {
+  display: inline-block;
+}
+
+/* Pastkihavola qismi */
+.careers-footer {
+  margin-top: 20px;
+}
+
+.careers-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  transition: opacity 0.3s ease;
+}
+
+.careers-link:hover {
+  opacity: 0.7;
+}
+
+.careers-arrow-icon {
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #ff9f43;
+  border-bottom: 2px solid #ff9f43;
+  transform: rotate(45deg);
+}
+/* Asosiy section */
+.careers-grid-section {
+  background-color: #f2f9fa; /* Rasmdagi och havo rang fon */
+  padding: 80px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.careers-grid-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Kartochka dizayni */
+.career-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.career-card-content {
+  margin-bottom: 30px;
+}
+
+.career-role {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.career-details {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.career-salary {
+  font-size: 14px;
+  color: #888;
+}
+
+/* "Apply Now" tugma qismi */
+.apply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3b30ff;
+  transition: gap 0.3s ease;
+}
+
+.apply-btn:hover {
+  gap: 12px;
+}
+/* Asosiy section */
+.culture-section {
+  background-color: #fbfbfe; /* Rasmdagi judayam och binafsha/oqish fon */
+  padding: 100px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.culture-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Sarlavha va matn qismi */
+.culture-header {
+  max-width: 580px;
+  margin-bottom: 60px;
+}
+
+.culture-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333;
+  display: block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.culture-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.culture-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* 3 ustunli Grid qismi */
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Kartochkalar dizayni */
+.culture-card {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Ikonka konteyneri (Aylana och apelsin rang fon) */
+.culture-icon-box {
+  width: 44px;
+  height: 44px;
+  background-color: #ffefe5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.culture-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.culture-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.culture-card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+/* Asosiy section */
+.ceo-profile-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  font-family: sans-serif;
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ceo-profile-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profil rasmi (Aylana shaklda) */
+.ceo-avatar-wrapper {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.ceo-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ism va lavozim */
+.ceo-name {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.ceo-role {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* Biografiya/Matn */
+.ceo-bio {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666666;
+  margin-bottom: 30px;
+  max-width: 520px;
+}
+
+/* Ijtimoiy tarmoq logolari konteyneri */
+.ceo-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.social-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 768px) {
+  .ceo-profile-section {
+    padding: 60px 20px;
+  }
+
+  .ceo-avatar-wrapper {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 24px;
+  }
+
+  .ceo-name {
+    font-size: 26px;
+  }
+
+  .ceo-bio {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ceo-avatar-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .ceo-name {
+    font-size: 22px;
+  }
+}
+/* Responsive (Planshetlar va Mobil qurilmalar uchun) */
+@media (max-width: 1024px) {
+  .culture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .culture-section {
+    padding: 60px 20px;
+  }
+
+  .culture-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .culture-title {
+    font-size: 24px;
+  }
+}
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 1024px) {
+  .careers-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .careers-grid-section {
+    padding: 50px 15px;
+  }
+}
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 1024px) {
+  .careers-word {
+    font-size: 120px;
+  }
+
+  .careers-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-word {
+    font-size: 70px;
+    letter-spacing: -2px;
+  }
+
+  .careers-title {
+    font-size: 28px;
+  }
+
+  .careers-section {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-word {
+    font-size: 45px;
+  }
+
+  .careers-title {
+    font-size: 24px;
+  }
+}
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 968px) {
+  .it-container {
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .it-content {
+    max-width: 100%;
+  }
+
+  .it-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .it-img {
+    max-width: 100%;
+  }
+
+  .it-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .it-section {
+    padding: 50px 20px;
+  }
+
+  .it-title {
+    font-size: 24px;
+  }
+
+  .it-desc {
+    font-size: 14px;
+  }
+}
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 968px) {
+  .consulting-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .consulting-content {
+    max-width: 100%;
+  }
+
+  .consulting-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .consulting-img {
+    max-width: 100%;
+  }
+
+  .consulting-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .consulting-section {
+    padding: 50px 20px;
+  }
+
+  .consulting-title {
+    font-size: 24px;
+  }
+
+  .consulting-desc {
+    font-size: 14px;
+  }
+}
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 968px) {
+  .aws-azure-container {
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .aws-azure-content {
+    max-width: 100%;
+  }
+
+  .aws-azure-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .aws-azure-img {
+    max-width: 100%;
+  }
+
+  .aws-azure-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aws-azure-section {
+    padding: 50px 20px;
+  }
+
+  .aws-azure-title {
+    font-size: 24px;
+  }
+
+  .aws-azure-desc {
+    font-size: 14px;
+  }
+}
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 968px) {
+  .development-container {
+    flex-direction: column-reverse; /* Mobil versiyada matn yuqorida yoki rasm joyida turishi uchun */
+    gap: 40px;
+  }
+
+  .development-content {
+    max-width: 100%;
+  }
+
+  .development-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .development-img {
+    max-width: 100%;
+  }
+
+  .development-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .development-section {
+    padding: 50px 20px;
+  }
+
+  .development-title {
+    font-size: 24px;
+  }
+
+  .development-desc {
+    font-size: 14px;
+  }
+}
+/* Responsive (Planshet va Mobil qurilmalar uchun) */
+@media (max-width: 968px) {
+  .tech-support-container {
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .tech-support-content {
+    max-width: 100%;
+  }
+
+  .tech-support-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tech-support-img {
+    max-width: 100%;
+  }
+
+  .tech-support-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-support-section {
+    padding: 50px 20px;
+  }
+
+  .tech-support-title {
+    font-size: 24px;
+  }
+
+  .tech-support-desc {
+    font-size: 14px;
+  }
+}
+/* Responsive (Mobil va Planshetlar uchun) */
+@media (max-width: 1024px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-title {
+    font-size: 30px;
+  }
+}
+
+/* Responsive qismi */
+@media (max-width: 968px) {
+  .services-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .services-right {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .services-list {
+    max-width: 100%;
+  }
+
+  .services-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 40px 20px;
+  }
+
+  .services-title {
+    font-size: 26px;
+  }
+
+  .services-btn {
+    width: 100%;
+  }
+}
